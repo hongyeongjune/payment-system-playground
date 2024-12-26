@@ -19,6 +19,12 @@ repositories {
 }
 
 dependencies {
+    // logging
+    implementation("io.github.microutils:kotlin-logging-jvm:3.0.5")
+
+    // netty mac os
+    implementation("io.netty:netty-resolver-dns-native-macos:4.1.68.Final:osx-aarch_64")
+
     implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
